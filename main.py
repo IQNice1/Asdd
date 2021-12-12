@@ -1,26 +1,8 @@
 import os
 import discord, asyncio
 from os import system
-import shutil
 import subprocess
-import socket, sys, discord, base64, threading, requests
-from sys import argv
-import psutil
-import logging
-from requests import get
-from time import sleep
 from discord.ext import commands
-from colorama import init, Fore
-from bs4 import BeautifulSoup
-from os import system
-from webserver import keep_alive
-#import ctypes ctypes.windll.kernel32.SetConsoleTitleA("M")
-
-init()
-system("@echo off")
-system("cls")
-system("mode con: cols=105 lines=30")
-system('title ' + 'urmom')
 
 print("""tu mama es puta jaja""")
 
@@ -59,5 +41,5 @@ async def on_message(message):
                                     await msg.delete()
                                 except Exception as x:
                                     pass
-keep_alive()
+
 client.run(os.environ['token'], bot=False)
